@@ -1,0 +1,64 @@
+body{
+    background-color: #164182;
+    padding: 0;
+    margin: 0;
+}
+
+.panda{
+    background-color: antiquewhite;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    margin : auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 0 1px black; /* cuerpo */
+}
+
+.panda:before { /* para poner las orejas y manchas */
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    top: 180px;
+    left: 110px;
+    box-shadow: /* se usará para dibujar las orejas y las manchas */
+    -50px -100px 0 20px #413a3a, /* mancha izquierda */
+    50px -100px 0 20px #413a3a, /* mancha derecha */
+    -95px -180px 0 10px rosybrown, /* oreja pequeña izquierda */
+    -95px -180px 0 20px dimgray, /* oreja grande izquierda */
+    -95px -180px 0 21px black, /* oreja mas grande izquierda */
+    95px -180px 0 10px rosybrown, /* oreja pequeña derecha */
+    95px -180px 0 20px dimgray, /* oreja  grande derecha */
+    95px -180px 0 21px black; /* oreja  mas grande derecha */
+
+}
+
+.panda::after{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    top: 180px;
+    left: 110px;
+    box-shadow: /* nota: dibujar todos los rasgos de la cara usando box-shadow */
+    -38px -91px 0 -12px white, /* reflejo pequeño ojo izquierdo */
+    -50px -105px 0 -8px white,/* reflejo grande ojo izquierdo */
+    -45px -100px 0 2px, /* ojo izquierdo */
+    50px -91px 0 -12px white, /* reflejo pequeño ojo derecho */
+    38px -105px 0 -8px white, /* reflejo grande ojo derecho */
+    45px -100px 0 2px, /* ojo derecho */
+    0 -40px 0 3px, /* nariz */
+    0 17px 0 3px; /* boca */
+
+
+
+
+}
